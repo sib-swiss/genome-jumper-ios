@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{8D9453B0-46EF-830B-92E1-34B123B61C99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;PLATFORM_IOS;UNITY_IOS;PLATFORM_IPHONE;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;USES_ADDRESS_BOOK;USES_BILLING;USES_CLOUD_SERVICES;USES_GAME_SERVICES;USES_MEDIA_LIBRARY;USES_NETWORK_CONNECTIVITY;USES_NOTIFICATION_SERVICE;USES_SHARING;USES_TWITTER;USES_WEBVIEW;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;UNITY_HAS_GOOGLEVR;ENABLE_MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Examples\Scripts\AttackSpineboy.cs" />
+     <Compile Include="Assets\Examples\Scripts\DataAssetsFromExportsExample.cs" />
+     <Compile Include="Assets\Examples\Scripts\FootSoldierExample.cs" />
+     <Compile Include="Assets\Examples\Scripts\Getting Started Scripts\BasicPlatformerController.cs" />
+     <Compile Include="Assets\Examples\Scripts\Getting Started Scripts\ConstrainedCamera.cs" />
+     <Compile Include="Assets\Examples\Scripts\Getting Started Scripts\Raptor.cs" />
+     <Compile Include="Assets\Examples\Scripts\Getting Started Scripts\SpineBeginnerTwo.cs" />
+     <Compile Include="Assets\Examples\Scripts\Getting Started Scripts\SpineBlinkPlayer.cs" />
+     <Compile Include="Assets\Examples\Scripts\Getting Started Scripts\SpineboyBeginnerInput.cs" />
+     <Compile Include="Assets\Examples\Scripts\Getting Started Scripts\SpineboyBeginnerModel.cs" />
+     <Compile Include="Assets\Examples\Scripts\Getting Started Scripts\SpineboyBeginnerView.cs" />
+     <Compile Include="Assets\Examples\Scripts\Getting Started Scripts\SpineboyTargetController.cs" />
+     <Compile Include="Assets\Examples\Scripts\Goblins.cs" />
+     <Compile Include="Assets\Examples\Scripts\HurtFlashEffect.cs" />
+     <Compile Include="Assets\Examples\Scripts\MixAndMatch.cs" />
+     <Compile Include="Assets\Examples\Scripts\MixAndMatchGraphic.cs" />
+     <Compile Include="Assets\Examples\Scripts\RaggedySpineboy.cs" />
+     <Compile Include="Assets\Examples\Scripts\Rotator.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\BoneLocalOverride.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\CombinedSkin.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\Legacy\AtlasRegionAttacher.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\Legacy\CustomSkin.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\Legacy\SpriteAttacher.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\Sample VertexEffects\JitterEffectExample.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\SkeletonAnimationMulti\SkeletonAnimationMulti.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\SkeletonColorInitialize.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\SlotTintBlackFollower.cs" />
+     <Compile Include="Assets\Examples\Scripts\Sample Components\SpineEventUnityHandler.cs" />
+     <Compile Include="Assets\Examples\Scripts\SpawnFromSkeletonDataExample.cs" />
+     <Compile Include="Assets\Examples\Scripts\Spineboy.cs" />
+     <Compile Include="Assets\Examples\Scripts\SpineboyPole.cs" />
+     <Compile Include="Assets\Examples\Scripts\SpineGauge.cs" />
+     <Compile Include="Assets\GeneButtonDisplay.cs" />
+     <Compile Include="Assets\GetStoredScoreForGene.cs" />
+     <Compile Include="Assets\LeanLocalization\Examples\LeanSliderToArg.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanCulture.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLanguageNameAttribute.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalization.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalizationLoader.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalizationMultiLoader.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalizedAudioSource.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalizedBehaviour.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalizedImage.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalizedSpriteRenderer.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalizedText.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalizedTextArgs.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanLocalizedTextFont.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanPhrase.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanPhraseNameAttribute.cs" />
+     <Compile Include="Assets\LeanLocalization\Scripts\LeanTranslation.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\AutomatedSceneBuilder.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Big_IntronLoader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Codon_EndLoader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Codon_StartLoader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Down_Loader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\ExonLoader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Huge_IntronLoader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\ISceneObject.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\JsonOrigin\ClassCount.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\JsonOrigin\DebugInfo.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\JsonOrigin\ExternalLinks.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\JsonOrigin\JsonOrigin.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\JsonOrigin\JsonOriginData.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\JsonOrigin\LevelData.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\JsonOrigin\MutationInfo.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Large_IntronLoader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\LevelJsonToScriptableObjects.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Medium_IntronLoader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Plugins\SimpleJSON.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Small_IntronLoader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Snp_Loader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\Up_Loader.cs" />
+     <Compile Include="Assets\Plugins Ext_\Automated Scene Builder\UtrLoader.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\ConsoleProDebug.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\ConsoleProRemoteServer.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\FastBitConverter.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\INetEventListener.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NatPunchModule.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetConstants.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetDataReader.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetDataWriter.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetDebug.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetEndPoint.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetPacket.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetPacketPool.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetPeer.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetPeerCollection.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetSerializer.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetSocket.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetThread.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NetUtils.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\NtpSyncModule.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\ReliableChannel.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\SequencedChannel.cs" />
+     <Compile Include="Assets\Plugins Ext_\ConsolePro\Remote\LiteNetLib\SimpleChannel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Achievements\AchievementRules.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\AI\AIFollow.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\AI\AIShootOnSight.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\AI\AIWalk.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\AI\PathedProjectile.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\AI\PathedProjectileSpawner.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\AI\TimedSpawner.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterAbility.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterButtonActivation.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterCrouch.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterDangling.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterDash.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterDive.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterGravity.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterGrip.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterHandleWeapon.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterHorizontalMovement.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterInventory.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterJetpack.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterJump.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterLadder.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterLookUp.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterParticles.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterPause.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterPush.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterRun.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterSlopeOrientation.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterWallClinging.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\CharacterWalljump.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Core\Character.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Core\CharacterEvents.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Core\CharacterLevelBounds.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Core\CharacterStates.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Core\Health.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CorgiController\CorgiController.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CorgiController\CorgiControllerParameters.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CorgiController\CorgiControllerState.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Damage\DamageOnTouch.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Damage\KillPlayerOnTouch.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Damage\Stompable.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\Bomb.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\MeleeWeapon.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\Projectile.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\ProjectileWeapon.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\ThrownObject.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\Weapon.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\WeaponAim.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\WeaponAmmo.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\WeaponIK.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Weapons\WeaponLaserSight.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Camera\CameraController.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Camera\LevelBackground.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Camera\MultiplayerCameraController.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Camera\NoGoingBack.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Camera\ParallaxCamera.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Camera\ParallaxElement.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\BonusBlock.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\CharacterOverrides\CharacterHorizontalMovementOverride.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\CharacterOverrides\CharacterJumpOverride.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\CharacterOverrides\CorgiControllerPhysicsVolume2D.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\CharacterOverrides\Water.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\FallingPlatform.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\GravityPoint.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\GravityZone.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\Grip.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\Jumper.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\KeyOperatedZone.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\Ladder.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\MovingPlatform.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\Pushable.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\RandomSprite.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\SurfaceModifier.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\Teleporter.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Environment\WallClingingOverride.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\AmmoDisplay.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\ButtonActivated.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\Dialogue\DialogueBox.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\Dialogue\DialogueZone.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\GUIManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\HealthBar\HealthBar.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\HipsterGUI.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\LevelSelector.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\LevelSelectorGUI.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\MultiplayerGUIManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\PauseButton.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\StartScreen.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\InventoryEngineItems\InventoryEngineChest.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\InventoryEngineItems\InventoryEngineHealth.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\InventoryEngineItems\InventoryEngineKey.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\InventoryEngineItems\InventoryEnginePoints.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\InventoryEngineItems\InventoryEngineTimeModifier.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\InventoryEngineItems\InventoryEngineWeapon.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Items\Coin.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Items\InventoryPickableItem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Items\PickableItem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Items\PickableWeapon.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Items\Stimpack.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Items\TimeModifier.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Managers\InputManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Managers\LevelManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Managers\LoadingSceneManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Managers\MultiplayerLevelManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Managers\SoundManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Sound\BackgroundMusic.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Spawn\AutoRespawn.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Spawn\CheckPoint.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Spawn\FinishLevel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Spawn\LevelRestarter.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Spawn\Respawnable.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Tilemaps\2dExtras\GridInformation\Scripts\GridInformation.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Tilemaps\2dExtras\Tiles\Animated Tile\Scripts\AnimatedTile.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Tilemaps\2dExtras\Tiles\Pipeline Tile\Scripts\PipelineTile.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Tilemaps\2dExtras\Tiles\Random Tile\Scripts\RandomTile.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Tilemaps\2dExtras\Tiles\Rule Tile\Scripts\RuleTile.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Tilemaps\2dExtras\Tiles\Terrain Tile\Scripts\TerrainTile.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Demos\Corgi2D\Scripts\BackgroundTree.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Demos\LevelSelection\Scripts\LevelMapCharacter.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Demos\LevelSelection\Scripts\LevelMapPathElement.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Demos\Minimal\Scripts\UncheckReverseGravityInput.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Demos\SuperHipsterBros\Scripts\Mushroom.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Demos\SuperHipsterBros\Scripts\SuperHipsterBrosHealth.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\Demos\PixelRogue\Scripts\ChangeLevel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\Demos\PixelRogue\Scripts\DemoCharacterInputManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\Demos\PixelRogue\Scripts\InventoryDemoCharacter.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\Demos\PixelRogue\Scripts\InventoryDemoGameManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\Demos\PixelRogue\Scripts\Items\ArmorItem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\Demos\PixelRogue\Scripts\Items\BombItem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\Demos\PixelRogue\Scripts\Items\HealthBonusItem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\Demos\PixelRogue\Scripts\Items\WeaponItem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\Inventory.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\InventoryEvents.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\InventoryInputManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\InventoryItem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\InventoryItemClasses.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\ItemPicker.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\SerializedInventory.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\GUI\InventoryDetails.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\GUI\InventoryDisplay.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\GUI\InventoryDisplayGrid.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\GUI\InventoryDisplayTitle.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\GUI\InventoryHotbar.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\GUI\InventorySelectionMarker.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\GUI\InventorySlot.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\GUI\InventorySoundPlayer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Items\BaseItem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMInterface\Scripts\MMFader.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\MMAchievement.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\MMAchievementDisplayer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\MMAchievementDisplayItem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\MMAchievementEvent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\MMAchievementList.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\MMAchievementManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\MMAchievementRules.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\SerializedMMAchievementManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Attributes\HiddenAttribute.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Attributes\InformationAttribute.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Attributes\InspectorButtonAttribute.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Attributes\ReadOnlyAttribute.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\AutoDestroy\TimedAutoDestroy.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Automation\AutoOrderInLayer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Automation\AutoRotate.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Automation\PathMovement\PathMovement.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Automation\Wiggle.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Camera\CameraAspectRatio.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Events\MMEventManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Extension\ExtensionMethods.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\FPSCounter\FPSCounter.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\GUI\GetFocusOnEnable.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\GUI\ProgressBar.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\GUI\SelectionBase.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Icons\SceneViewIcon.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMControls\MMControlsTestInputManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMControls\MMSwipeZone.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMControls\MMTouchAxis.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMControls\MMTouchButton.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMControls\MMTouchControls.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMControls\MMTouchDynamicJoystick.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMControls\MMTouchJoystick.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMAnimator.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMBounds.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMConsole.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMDebug.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMFade.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMGUI.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMHelpers.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMImage.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMInput.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMLayers.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMLists.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMMaths.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMMovement.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\MMHelpers\MMTime.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\ObjectBounds\ObjectBounds.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\ObjectPool\MultipleObjectPooler.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\ObjectPool\ObjectPooler.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\ObjectPool\PoolableObject.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\ObjectPool\SimpleObjectPooler.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Particles\AutoDestroyParticleSystem.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Particles\ChangeFogColor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Particles\MMTrailRendererSortingLayer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Particles\VisibleParticle.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\RigidbodyInterface\RigidbodyInterface.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\SaveLoad\SaveLoadManager.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Singletons\PersistentHumbleSingleton.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Singletons\PersistentSingleton.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Singletons\Singleton.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\StateMachine\MMStateMachine.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\BloomComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\FogComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\GrainComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\TaaComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\BloomModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\DitheringModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\FogModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\GrainModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\UserLutModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Models\VignetteModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\PostProcessingComponent.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\PostProcessingContext.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\PostProcessingModel.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\renderScaleModifier.cs" />
+     <Compile Include="Assets\scrollingHeight.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Animations\DynamicGoText.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Animations\LoadingScreen.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Animations\StarsAnimations.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\AttachmentPersistency.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\AvatarPopup.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\AvatarsPopupInfo.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\CameraFollowCharacter.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\ChangeModal.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\CharacterState.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\CheckpointsManager.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Coins.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\CustomCircleCollider.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\DieTest.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\DifficultyManager.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\DisablePostProcessCam.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\DisplayGeneNameOnEndScreens.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\DisplayItemsEndScreen.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\EndLevelTrigger.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\EnemyCollideEffect.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\FaceToggler.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\FirstTimePlay.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\GameQuit.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\GenePlayPopup.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\GenePopupCreator.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\GenePopupDisplay.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Glossary\GlossaryItems.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Glossary\ItemPanel.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\HelloPseudo.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\IncrementTimePlayed.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\IntronRemover.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\isGameStartedForFirstTime.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\JumpRangeSRProtein.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LevelDisplay.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LevelObjects.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LevelOnClick.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LevelPopupCreator.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LevelPopupDisplay.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LevelProperties.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LevelSplicing.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LevelUnlock.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Life.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LoadingTimer\LoadingMenu.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LoadingTimer\RadialLoadingBar.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\LockChecker.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\MenuStats.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Params\GameParams.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Params\RoundData.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\PlayerMarkerPosition.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\PlaySound.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\PostProcessRenderScale.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SaveLevelStats.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\ScaleFading.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\ScoreDisplay.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SetMute.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SetPseudoInPlayerPrefs.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Sharing\NativeShare.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Sharing\ShareScore.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\ShowNextAvatarKariotype.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SkipVideo.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SNPVariant.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SparksOnCollide.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SrProteine.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SrProteine2.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\StartStopCodonBehaviour.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\StartTestAndSound.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\StoreLevelToPlay.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SuperVariant.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SuperVariant_oldVersion.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SuperVariantPanel.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\SuperVariantPlayerModifier.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\TextUiI18N\LogoLinks.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\TextUiI18N\TextLinks.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\TextUiI18N\WinGameScreenTxt.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\TutorialPopup.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\UnlockedAvatars.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\VideoCtrl.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\VideoFadeEffect.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\WipeProgression.cs" />
+     <Compile Include="Assets\SIB Assets\Scripts\Zoom.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Animation.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\AnimationState.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\AnimationStateData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Atlas.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\AtlasAttachmentLoader.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\Attachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\AttachmentLoader.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\AttachmentType.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\BoundingBoxAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\ClippingAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\MeshAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\PathAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\PointAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\RegionAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\VertexAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\BlendMode.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Bone.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\BoneData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Event.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\EventData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\ExposedList.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\IConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\IkConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\IkConstraintData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\IUpdatable.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Json.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\MathUtils.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\PathConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\PathConstraintData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Skeleton.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonBinary.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonBounds.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonClipping.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonJson.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Skin.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Slot.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SlotData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\TransformConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\TransformConstraintData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Triangulator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Asset Types\AtlasAsset.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Asset Types\SkeletonDataAsset.cs" />
+     <Compile Include="Assets\Spine\spine-unity\BoneFollower.cs" />
+     <Compile Include="Assets\Spine\spine-unity\ISkeletonAnimation.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\DoubleBuffered.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\SpineMesh.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ArraysMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ArraysSimpleMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ArraysSubmeshedMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ArraysSubmeshSetMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\DoubleBufferedMesh.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ISimpleMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ISubmeshedMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\BoundingBoxFollower\BoundingBoxFollower.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ghost\SkeletonGhost.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ghost\SkeletonGhostRenderer.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ragdoll\SkeletonRagdoll.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ragdoll\SkeletonRagdoll2D.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\SkeletonGraphic.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonPartsRenderer.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityEyeConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityGroundConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityKinematicShadow.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\SlotBlendModes.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\YieldInstructions\WaitForSpineEvent.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\YieldInstructions\WaitForSpineTrackEntryEnd.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonAnimation.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonAnimator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonExtensions.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonRenderer.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\SkeletonUtility.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SpineAttributes.cs" />
+     <Compile Include="Assets\WaypointPro\Sample\Script\MouseClickDemo.cs" />
+     <Compile Include="Assets\WaypointPro\Sample\Script\PlayerDemo.cs" />
+     <Compile Include="Assets\WaypointPro\Script\Cooltimer.cs" />
+     <Compile Include="Assets\WaypointPro\Script\PathData.cs" />
+     <Compile Include="Assets\WaypointPro\Script\PathFollower.cs" />
+     <Compile Include="Assets\WaypointPro\Script\WaypointManager.cs" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+     <None Include="Assets\Examples\Spine\Eyes\eyes.atlas.txt" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Utility\HiddenPass.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteShadows.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\Demos\Corgi2D\Spine\NativeSpineCorgi\ExportedFromSpine\space-corgi.atlas.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\Fog.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteShadows.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
+     <None Include="Assets\LeanLocalization\Examples\MultiLanguage.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
+     <None Include="Assets\SIB Assets\Scripts\Shaders\BLUR.shader" />
+     <None Include="Assets\Examples\Spine\spineboy-pro\spineboy.atlas.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+     <None Include="Assets\Examples\Spine\Gauge\Gauge.atlas.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+     <None Include="Assets\Examples\Spine\FootSoldier\FS_White.atlas.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\ACES.cginc" />
+     <None Include="Assets\Examples\Spine\Hero\hero-mesh.atlas.txt" />
+     <None Include="Assets\Examples\Spine\Dragon\license.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+     <None Include="Assets\Plugins Ext_\Automated Scene Builder\README.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+     <None Include="Assets\Examples\Spine\Hero\license.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\Demos\Corgi2D\Spine\Heavy\heavy-corgi.atlas.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <None Include="Assets\Examples\Spine\Goblins\goblins.atlas.txt" />
+     <None Include="Assets\Examples\Spine\Strechyman\stretchyman-diffuse-pma.atlas.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+     <None Include="Assets\Examples\Spine\Raptor\raptor.atlas.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
+     <None Include="Assets\Examples\Spine\spineboy-unity\spineboy.atlas.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+     <None Include="Assets\Jiggly Bubble Free\readme_Jiggly_Bubble_Free.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
+     <None Include="Assets\Examples\Spine\FootSoldier\license.txt" />
+     <None Include="Assets\Spine\spine-unity\version.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Bluenoise64\INFO.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\Examples\Spine\Raggedy Spineboy\Raggedy Spineboy.atlas.txt" />
+     <None Include="Assets\LeanLocalization\Examples\English.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Spine-Skeleton-Tint.shader" />
+     <None Include="Assets\LeanLocalization\Examples\Spanish.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\Common.cginc" />
+     <None Include="Assets\Jiggly Bubble Free\Shaders\Particle Alpha Blended Cubemap.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Utility\Hidden-Spine-Bones.shader" />
+     <None Include="Assets\LeanLocalization\Examples\Japanese.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor Resources\UI\Trackball.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\license.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\Demos\Brobro\Spine\Brobro\space-corgi.atlas.txt" />
+     <None Include="Assets\SIB Assets\I18N\fr.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\Bloom.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\TAA.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\TAA.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+     <None Include="Assets\SIB Assets\Characters\Default\skeleton.atlas.txt" />
+     <None Include="Assets\SIB Assets\Shaders\WorldspaceTiling.shader" />
+     <None Include="Assets\Examples\Spine\Dragon\dragon.atlas.txt" />
+     <None Include="Assets\Jiggly Bubble Free\Shaders\Particle Alpha Blended Cubemap Skybox.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\GrainGen.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\FXAA.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Spine-Skeleton-TintBlack.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\readme.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\Bloom.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+     <None Include="Assets\Examples\Spine\Spineunitygirl\Doi.atlas.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\Demos\Corgi2D\Spine\SpaceCorgi\space-corgi.atlas.txt" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+     <None Include="Assets\SIB Assets\Characters\Test\skeleton.atlas.txt" />
+     <None Include="Assets\SIB Assets\I18N\en.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Multiply.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderMaths.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Spine-SkeletonLit.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteSpecular.cginc" />
+     <None Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+     <None Include="Assets\SIB Assets\I18N\de.txt" />
+     <None Include="Assets\Examples\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIAutomation">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.IOSResolver">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.PackageManager">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/PlayServicesResolver/Editor/Google.PackageManager.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandler">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ </Reference>
+ <Reference Include="ConsolePro.Editor">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/Plugins Ext_/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{17A3EC5A-2EBD-D971-413C-3E41C9BC78E3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{16A46965-A287-FA10-AFEA-670F12195989}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;PLATFORM_IOS;UNITY_IOS;PLATFORM_IPHONE;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;USES_ADDRESS_BOOK;USES_BILLING;USES_CLOUD_SERVICES;USES_GAME_SERVICES;USES_MEDIA_LIBRARY;USES_NETWORK_CONNECTIVITY;USES_NOTIFICATION_SERVICE;USES_SHARING;USES_TWITTER;USES_WEBVIEW;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;UNITY_HAS_GOOGLEVR;ENABLE_MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\LeanLocalization\Editor\LeanLocalization_Editor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CharacterAbilities\Editor\CharacterAbilityInspector.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\Core\Editor\CharacterInspector.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Agents\CorgiController\Editor\CorgiControllerInspector.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Editor\MoreMountainsMenu.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\GUI\HealthBar\Editor\HealthBarEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Managers\Editor\LevelManagerEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Common\Scripts\Tilemaps\2dExtras\Tiles\Rule Tile\Scripts\Editor\RuleTileEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\Demos\LevelSelection\Scripts\Editor\LevelMapPathElementEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\Editor\InventoryEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\Editor\InventoryEngineMenu.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\Editor\InventoryItemEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\Core\Editor\PickableInventoryItemEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\InventoryEngine\InventoryEngine\Scripts\GUI\Editor\InventoryDisplayEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\Editor\MMAchievementListInspector.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Achievements\Scripts\Editor\MMAchievementMenu.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Attributes\Editor\HiddenAttributeDrawer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Attributes\Editor\InformationDrawer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Attributes\Editor\MoreMountainsMenuHelp.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Attributes\Editor\ReadOnlyAttributeDrawer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Automation\PathMovement\Editor\PathMovementEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Editor\FindMissingScriptsRecursively.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Icons\Editor\ManagerIconEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\ObjectBounds\Editor\ObjectBoundsEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\MMTools\Particles\Editor\MMTrailRendererSortingLayerEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\BloomModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\BuiltinDebugViewsEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\ChromaticAberrationEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\ColorGradingModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\DefaultPostFxModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\DepthOfFieldModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\DitheringModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\EyeAdaptationModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\FogModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\GrainModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\MotionBlurModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\ScreenSpaceReflectionModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\UserLutModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Models\VignetteModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Monitors\HistogramMonitor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Monitors\ParadeMonitor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Monitors\VectorscopeMonitor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Monitors\WaveformMonitor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\PostProcessingBehaviourEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\PostProcessingFactory.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\PostProcessingInspector.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\PostProcessingModelEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\PostProcessingMonitor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\PropertyDrawers\GetSetDrawer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\PropertyDrawers\MinDrawer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\PropertyDrawers\TrackballGroupDrawer.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Utils\CurveEditor.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Utils\EditorGUIHelper.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Utils\EditorResources.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Utils\FxStyles.cs" />
+     <Compile Include="Assets\Plugins Ext_\CorgiEngine\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\AssetDatabaseAvailabilityDetector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\AtlasAssetInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\BoneFollowerInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\Menus.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonAnimationInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonAnimatorInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonBaker.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonBakingWindow.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonDataAssetInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonDebugWindow.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonRendererInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SpineAttributeDrawers.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SpineEditorUtilities.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SpineInspectorUtility.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\BoundingBoxFollower\Editor\BoundingBoxFollowerInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\CustomMaterials\Editor\SkeletonRendererCustomMaterialsInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ragdoll\Editor\SkeletonRagdoll2DInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ragdoll\Editor\SkeletonRagdollInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\Editor\SpineSpriteShaderGUI.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Editor\BoneFollowerGraphicInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Editor\SkeletonGraphicInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonPartsRendererInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonRenderSeparatorInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Editor\SlotBlendModesEditor.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\Editor\SkeletonUtilityBoneInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\Editor\SkeletonUtilityInspector.cs" />
+     <Compile Include="Assets\WaypointPro\Script\Editor\CustomEditor.cs" />
+     <Compile Include="Assets\WaypointPro\Script\Editor\WaypointManagerEditor.cs" />
+     <None Include="Assets\Spine\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIAutomation">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.IOSResolver">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.PackageManager">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/PlayServicesResolver/Editor/Google.PackageManager.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandler">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ </Reference>
+ <Reference Include="ConsolePro.Editor">
+ <HintPath>/Users/pinterac/Projects/Prestations/SIB Human Genome Final/SIB Human Genome/Assets/Plugins Ext_/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>/Users/pinterac/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{17A3EC5A-2EBD-D971-413C-3E41C9BC78E3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{8D9453B0-46EF-830B-92E1-34B123B61C99}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{36CCD93B-D274-C15D-DF25-B5BB9E84056F}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
