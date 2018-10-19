@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f03854340af5b4f4cbc7e6baeba36524
+guid: 7946aeda9469e49cd9d610021bfabec5
 labels:
 - Addressbook
 - Native
@@ -8,8 +8,11 @@ labels:
 - Profile
 - Picture
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

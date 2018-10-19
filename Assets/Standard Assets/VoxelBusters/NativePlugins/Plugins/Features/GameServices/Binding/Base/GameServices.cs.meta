@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: baff5c7030ba546bc8c3c2a6f842edfc
+guid: cff3f57ebe2a04c73940e85cb6997a72
 labels:
 - Leaderboards
 - Achievements
@@ -11,8 +11,11 @@ labels:
 - PlayServices
 - GameCenter
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

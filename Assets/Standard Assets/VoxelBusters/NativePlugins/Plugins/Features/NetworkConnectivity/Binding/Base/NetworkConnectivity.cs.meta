@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: 76931e68016a1453d91f0d20ff094162
+guid: 0025c8d1631fb4763b59588abbf25b81
 labels:
 - Network
 - Native
 - Plugins
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

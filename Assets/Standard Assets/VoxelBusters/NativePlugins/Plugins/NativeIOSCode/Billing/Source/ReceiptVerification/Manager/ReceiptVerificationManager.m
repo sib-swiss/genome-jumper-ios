@@ -13,7 +13,7 @@
 
 // Constants
 const NSString *bundleIdentifier	= @"ch.sib.genomejumperv2";
-const NSString *bundleVersion		= @"14";
+const NSString *bundleVersion		= @"0";
 
 @interface ReceiptVerificationManager ()
 

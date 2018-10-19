@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: 1a8105339b398478bbd9121845968275
+guid: 8032e60c6911045f69a67d925f139c9a
 labels:
 - Soomla
 - Grow
 - Analytics
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

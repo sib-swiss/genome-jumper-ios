@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: 65c44ec746c3443c7ac408c32016cc62
+guid: 01525b07948e34bd893ef8fb6b03545d
 labels:
 - IAP
 - Purchase
 - Inapp
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

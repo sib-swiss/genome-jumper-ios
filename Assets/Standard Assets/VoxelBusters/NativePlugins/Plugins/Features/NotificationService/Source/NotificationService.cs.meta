@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0591a5db33b4c418cb00d268f681acf8
+guid: 08dbd5726db084360880718da9946b42
 labels:
 - Notification
 - PushNotification
@@ -13,8 +13,11 @@ labels:
 - Schedule
 - GCM
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

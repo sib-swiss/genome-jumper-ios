@@ -1,15 +1,21 @@
 fileFormatVersion: 2
-guid: 7e68b8fcba7f54977a2bb115cb7f04d6
+guid: 3c657fb48997b4d428a70354b30fec38
 PluginImporter:
-  serializedVersion: 1
+  externalObjects: {}
+  serializedVersion: 2
   iconMap: {}
   executionOrder: {}
   isPreloaded: 0
+  isOverridable: 0
   platformData:
-    Any:
+  - first:
+      Any: 
+    second:
       enabled: 0
       settings: {}
-    Editor:
+  - first:
+      Editor: Editor
+    second:
       enabled: 0
       settings:
         DefaultValueInitialized: true

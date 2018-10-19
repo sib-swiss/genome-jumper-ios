@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c6db5b8e482814020945e484e6884258
+guid: ea8437b51f1464416a02bf8304c1ec63
 labels:
 - Cloud
 - Save
@@ -12,8 +12,11 @@ labels:
 - Native
 - Plugins
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

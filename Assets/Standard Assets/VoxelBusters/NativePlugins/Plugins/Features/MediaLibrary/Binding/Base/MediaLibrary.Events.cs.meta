@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6abbf56c2c24d44f9bb7964cb928d5ba
+guid: 84d2230b7ec254a8c8fd9a80e9f0bac9
 labels:
 - Media
 - Plugins
@@ -12,8 +12,11 @@ labels:
 - Youtube
 - Vimeo
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

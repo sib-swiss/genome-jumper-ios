@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: c27ffc19e18ae40a1b293fbb309777b4
+guid: 8348d74239d5043a3864231670a22fa8
 labels:
 - Console
 - Debug
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

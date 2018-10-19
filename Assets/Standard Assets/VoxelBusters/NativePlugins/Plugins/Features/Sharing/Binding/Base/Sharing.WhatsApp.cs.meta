@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: faa7ef7cc7a2d499abe5f5a20d158846
+guid: 13780281e335e4e628f7848297baa6b2
 labels:
 - Facebook
 - Whatsapp
@@ -10,8 +10,11 @@ labels:
 - Twitter
 - Share
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

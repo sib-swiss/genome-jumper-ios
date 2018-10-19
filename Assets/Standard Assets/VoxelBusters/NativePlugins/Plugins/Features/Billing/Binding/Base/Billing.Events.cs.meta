@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69548a76857d64be39cc588557e9a67d
+guid: c5fe6dde548df444695530887d556b4a
 labels:
 - Billing
 - IAP
@@ -10,8 +10,11 @@ labels:
 - Buy
 - Freemium
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

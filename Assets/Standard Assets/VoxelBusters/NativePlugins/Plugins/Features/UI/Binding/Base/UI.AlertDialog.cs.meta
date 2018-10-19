@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 31789db8c4b054eeab2aac65430808aa
+guid: 13b7c7231523c4293889b61f39145aba
 labels:
 - Alerts
 - NativeDialogs
@@ -9,8 +9,11 @@ labels:
 - Login
 - Message
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

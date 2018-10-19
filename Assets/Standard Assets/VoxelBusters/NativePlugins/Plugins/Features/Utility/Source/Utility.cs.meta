@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: dcbbb2555ab4244b7bed65d98c5dd18e
+guid: 61b605487d702498ab57588b38b72e08
 labels:
 - Utility
 - Native
 - Plugins
 - BuildVersion
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
